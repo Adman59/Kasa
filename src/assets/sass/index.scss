@@ -1,0 +1,14 @@
+// Import de tous les components avant les pages car les pages utilise les components.
+@import "@/assets/sass/components/cards/cards.scss";
+
+
+//import des layout.
+@import "@/assets/sass/layout/header.scss";
+@import "@/assets/sass/layout/main.scss";
+@import "@/assets/sass/layout/footer.scss";
+
+//import des pages.
+@import "@/assets/sass/layout/pages/home.scss";
+@import "@/assets/sass/layout/pages/about.scss";
+@import "@/assets/sass/layout/pages/logement.scss";
+@import "@/assets/sass/layout/pages/not404.scss";
