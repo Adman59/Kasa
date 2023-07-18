@@ -1,0 +1,44 @@
+//Couleur principale
+$primary-color: #FF6060;
+$primary-color-darken: #c54848;
+
+//Couleur secondaires
+$grey-background: #F6F6F6;
+$grey-darken: #C4C4C4;
+$dark-background: #000;
+$white-background: #FFFFFF;
+
+
+//Textes
+$txt-fond-clair: #000000;
+$txt-fond-sombre: #ffffff;
+
+$h1-font-size: 2.25rem;
+$h2-font-size: 1.5rem;
+$h3-font-size: 1.125rem;
+
+$h1-font-size-mobile: 1.125rem;
+$h2-font-size-mobile: 0.75rem;
+$h3-font-size-mobile: 0.625rem;
+
+$txt-font-size: 1.125rem;
+
+$font-primary: 'Montserrat', sans-serif;
+
+//Fonts weight
+$font-regular: 400;
+$font-medium: 500;
+$font-bold: 700;
+
+//Radius
+$large-radius: 1.5rem;
+$small-radius: 0.625rem;
+
+//Margin
+$margin-mobile: 2rem auto;
+$margin-desktop: 4rem auto;
+
+//MediaQueries
+$Media-Tablette:576px;
+$Media-Desktop:992px;
+$Media-Large: 1200px;

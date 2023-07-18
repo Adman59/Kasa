@@ -1,7 +1,7 @@
 import React from 'react';
 import { Routes, Route, Navigate } from 'react-router-dom'
 import Layout from '@/layout/layout.js'
-import { Home, Logement , About , Erreur404 } from '@/pages/public/index.js'
+import { Home, Logement , About , Not404 } from '@/pages/public/index.js'
 
 const PublicRouter = () => {
     return (
@@ -12,7 +12,7 @@ const PublicRouter = () => {
                 <Route path="/home" element={<Home />} />
                 <Route path="/logement/:id" element={<Logement />} />
                 <Route path="/about" element={<About />}/>
-                <Route path="*" element={<Erreur404 />} /> 
+                <Route path="*" element={<Not404 />} /> 
             </Route>
         </Routes>
 

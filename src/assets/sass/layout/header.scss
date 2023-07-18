@@ -1,0 +1,41 @@
+header {
+    @extend %flex-between;
+    @extend %grid-section;
+    margin: $margin-mobile;
+
+    .navlink__logo img {
+        width: 145px;
+        height: auto;
+
+        @media screen and (min-width: $Media-Desktop) {
+            width: 100%;
+        }
+    }
+
+    nav ul {
+        @extend %flex-between;
+
+        li {
+            padding: 0.5rem;
+
+            @media screen and (min-width: $Media-Desktop) {
+                padding: 0.5rem 1rem;
+            }
+
+            a.navlink__menu {
+                font-size: $h2-font-size-mobile;
+                text-transform: uppercase;
+                color: $primary-color;
+
+                @media screen and (min-width: $Media-Tablette) {
+                    font-size: $h2-font-size;
+                    text-transform: none;
+                    margin: $margin-desktop;
+                    &:hover {
+                        color: $primary-color-darken;
+                    }
+                }
+            }
+        }
+    }
+}

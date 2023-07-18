@@ -1,0 +1,36 @@
+body {
+    font-family: $font-primary;
+}
+    
+h1, h2, h3 {
+    color: $primary-color;
+    font-weight: $font-medium; 
+}
+
+h1 {
+    font-size: $h1-font-size;
+}
+
+h2 {
+    font-size: $h2-font-size;
+}
+
+h3 {
+    font-size: $h3-font-size;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    li {
+        list-style-type: none;
+    }
+}
+
+p {
+    font-size: $txt-font-size;
+}
+
+a {
+    text-decoration: none;
+}

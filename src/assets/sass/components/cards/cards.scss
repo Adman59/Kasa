@@ -1,0 +1,68 @@
+ul {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    gap: 2rem; 
+
+    @media screen and (min-width: $Media-Desktop) {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    @media screen and (min-width: $Media-Large) {
+        grid-template-columns: 340px 340px 340px;
+    }
+
+    li.card {
+        width: 100%;
+        height: 255px;
+        position: relative;
+        border-radius: $small-radius;
+
+        @media screen and (min-width: $Media-Desktop) {
+            height: 340px;
+        }
+
+        .card__navlink {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+
+            .card__navlink_img {
+                @extend %img-fit-cover;
+                border-radius: $small-radius;
+            }
+    
+            .card__navlink_title {
+                color: $white-background;
+                font-size:$txt-font-size;
+                position: absolute;
+                bottom: 1.5rem;
+                left: 1.5rem;
+                right: 1.5rem;
+                margin: 0;
+                z-index: 1;
+            }
+
+            .card__background_gradient {
+                border-radius: $small-radius;
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                top: 0;
+                left: 0;
+                background: linear-gradient(180deg, rgba(255, 255, 255, 0.00) 0%, rgba(0, 0, 0, 0.50) 100%);
+                z-index: 0;
+            }
+
+            &:hover {
+                .card__background_gradient,
+                .card__navlink_title {
+                    opacity: 0;
+                    transition: all 0.3s ease-in-out;
+                }
+            }
+        }
+    }
+}

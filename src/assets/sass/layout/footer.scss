@@ -1,0 +1,11 @@
+footer {
+    background-color: $dark-background;
+    margin-top: 2rem;
+    color: $white-background;
+
+    .footer-container {
+        @extend %grid-section;
+        padding: 4rem 0 2rem;
+        text-align: center;
+    }
+}
