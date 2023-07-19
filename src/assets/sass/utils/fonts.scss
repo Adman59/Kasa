@@ -8,15 +8,27 @@ h1, h2, h3 {
 }
 
 h1 {
-    font-size: $h1-font-size;
+    font-size: $h1-font-size-mobile;
+
+    @media screen and (min-width: $Media-Desktop) {
+        font-size: $h1-font-size;
+    }
 }
 
 h2 {
-    font-size: $h2-font-size;
+    font-size: $h2-font-size-mobile;
+
+    @media screen and (min-width: $Media-Desktop) {
+        font-size: $h2-font-size;
+    }
 }
 
 h3 {
-    font-size: $h3-font-size;
+    font-size: $h3-font-size-mobile;
+
+    @media screen and (min-width: $Media-Desktop) {
+        font-size: $h3-font-size;
+    }
 }
 
 ul {
@@ -28,7 +40,11 @@ ul {
 }
 
 p {
-    font-size: $txt-font-size;
+    font-size: $txt-font-size-mobile;
+
+    @media screen and (min-width: $Media-Desktop) {
+        font-size: $txt-font-size;
+    }
 }
 
 a {

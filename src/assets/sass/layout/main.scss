@@ -1,10 +1,4 @@
-section.home {
+section {
     @extend %grid-section;
     margin: $margin-mobile;
-
-    @media screen and (min-width: $Media-Desktop) {
-        padding: 3rem;
-        background-color: $grey-background;
-        border-radius: $large-radius;
-    }
 }

@@ -1,0 +1,38 @@
+.collapsible {
+    width: 100%;
+    background-color: $grey-background;
+    margin: $margin-mobile;
+
+    .collapsible__button {
+        font-size: $h2-font-size-mobile;
+        background-color: $primary-color;
+        color: $white-background;
+        border-radius: $small-radius;
+        padding: 0 1rem;
+        height: 47px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        @media screen and (min-width: $Media-Desktop) {
+            font-size: $h2-font-size;
+        }
+
+            img {
+                width: 15px;
+
+                @media screen and (min-width: $Media-Desktop) {
+                    width: 25px;
+                }
+            }
+    }
+
+    .collapsible__content {
+        padding: 2rem 1rem 0.5rem 1rem;
+
+        p {
+            color: $primary-color;
+            margin: 0;
+        }
+    }
+}

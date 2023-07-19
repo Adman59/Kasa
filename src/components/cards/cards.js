@@ -4,7 +4,7 @@ import LogementService from "@/_services/logement.service.js"
 
 const Cards = () => {
     return (
-            <ul>
+            <>
             {
                     LogementService.GetAllLogement().map((logement) => 
                         <li className='card'>
@@ -16,7 +16,7 @@ const Cards = () => {
                         </li>
                     )
                 }
-            </ul>
+            </>
     );
 };
 
