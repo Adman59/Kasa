@@ -2,3 +2,7 @@ section {
     @extend %grid-section;
     margin: $margin-mobile;
 }
+
+section.not404 {
+    padding: 8rem 0;
+}

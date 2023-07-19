@@ -1,0 +1,37 @@
+.not404 h1 {
+    font-size: 6rem;
+    text-align: center;
+    font-weight: $font-bold;
+    margin: 0;
+
+    @media screen and (min-width: $Media-Desktop) {
+        font-size: 18rem;
+    }
+
+    span {
+        display: block;
+        font-size: $h3-font-size;
+        font-weight: $font-medium;
+
+        @media screen and (min-width: $Media-Desktop) {
+            font-size: 2.5rem;
+        }
+    }
+}
+
+.navlink__404 {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    margin: 2rem auto;
+    color: $primary-color;
+    text-decoration: underline;
+
+    &:hover {
+        text-decoration: none;
+    }
+
+    @media screen and (min-width: $Media-Desktop) {
+        margin: 4rem auto;
+    }
+}
