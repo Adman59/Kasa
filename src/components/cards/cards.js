@@ -1,22 +1,18 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-import LogementService from "@/_services/logement.service.js"
 
-const Cards = () => {
+
+const Cards = ({id,title, cover}) => {
     return (
-            <>
-            {
-                    LogementService.GetAllLogement().map((logement) => 
-                        <li className='card'>
-                            <NavLink className="card__navlink" key={logement.id} to={"/logement/" + logement.id + "/#"}>
-                                <img class="card__navlink_img" src={logement.cover} alt={logement.title}  />
-                                <p class="card__navlink_title">{logement.title}</p>
-                                <span className='card__background_gradient'></span>
-                            </NavLink>
-                        </li>
-                    )
-                }
-            </>
+
+        <li className='card'>
+            <NavLink className="card__navlink" key={id} to={"/logement/" + id + "/#"}>
+                <img className="card__navlink_img" src={cover} alt={title}  />
+                <p className="card__navlink_title">{title}</p>
+                <span className='card__background_gradient'></span>
+            </NavLink>
+        </li>
+         
     );
 };
 

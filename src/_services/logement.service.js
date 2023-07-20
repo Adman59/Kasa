@@ -5,7 +5,8 @@ let GetAllLogement = () => {
 }
 
 let GetOneLogement = async (id) => {
-    
+    const OneLogement = await ListeLogements.find(logement => logement.id === id);
+    return OneLogement;
 }
 
 export const LogementService = {
