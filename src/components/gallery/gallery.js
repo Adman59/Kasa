@@ -8,25 +8,24 @@ const Gallery = ({ slides }) => {
 
 
     const nextImage = () => {
-        setIndex((indexprec) => 
-            indexprec + 1 === slides.length ? 0 : indexprec + 1)
+        setIndex(index === slides.length - 1 ? 0 : index + 1)
     }
-    const previousImage = () => {
 
+    const previousImage = () => {
+        setIndex(index === 0 ? slides.length - 1 : index - 1)
     }
 
     return (
         <div className="slideshow">
-        <img className="arrowLeft" src={IconLeft} alt="flèche gauche" onClick={() => previousImage()} />
-        <div className="slideshowSlider" style={{ transform: `translate3d(${-index * 100}%, 0, 0)` }}>
+            <img className="arrowLeft" src={IconLeft} alt="flèche gauche" onClick={() => previousImage()} />
+            <div className="slideshowSlider" style={{ transform: `translate3d(${-index * 100}%, 0, 0)` }}>
+                {slides.map((picture, index) => (
+                    <div className="slide" key={index} style={{ background: `no-repeat center/cover url(${picture})` }}></div>
 
-            {slides.map((picture, index) => (
-                <div className="slide" key={index} style={{ background: `no-repeat center/cover url(${picture})` }}></div>
-
-            ))}
-        </div>
-        <img className="arrowRight" src={IconRight} alt="flèche droite" onClick={() => nextImage()} />
-        <span className="paging"> {index + 1} / {slides.length} </span>
+                ))}
+            </div>
+            <img className="arrowRight" src={IconRight} alt="flèche droite" onClick={() => nextImage()} />
+            <span className="paging"> {index + 1} / {slides.length} </span>
     </div>
     );
 };
