@@ -17,15 +17,15 @@ const Gallery = ({ slides }) => {
 
     return (
         <div className="slideshow">
-            <img className="arrowLeft" src={IconLeft} alt="flèche gauche" onClick={() => previousImage()} />
-            <div className="slideshowSlider" style={{ transform: `translate3d(${-index * 100}%, 0, 0)` }}>
+            <img className="slideshow__arrowLeft" src={IconLeft} alt="flèche gauche" onClick={() => previousImage()} />
+            <div className="slideshow__slider" style={{ transform: `translate3d(${-index * 100}%, 0, 0)` }}>
                 {slides.map((picture, index) => (
-                    <div className="slide" key={index} style={{ background: `no-repeat center/cover url(${picture})` }}></div>
+                    <div className="slideshow__slide" key={index} style={{ background: `no-repeat center/cover url(${picture})` }}></div>
 
                 ))}
             </div>
-            <img className="arrowRight" src={IconRight} alt="flèche droite" onClick={() => nextImage()} />
-            <span className="paging"> {index + 1} / {slides.length} </span>
+            <img className="slideshow__arrowRight" src={IconRight} alt="flèche droite" onClick={() => nextImage()} />
+            <span className="slideshow__paging"> {index + 1} / {slides.length} </span>
     </div>
     );
 };

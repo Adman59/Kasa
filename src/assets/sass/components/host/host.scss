@@ -1,0 +1,35 @@
+.host {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    @media screen and (min-width: $Media-Desktop) {
+        justify-content: flex-end;
+        margin-bottom: 2rem;
+    }
+
+    .host__name {
+        text-align: right;
+        margin-right: 0.5rem;
+        color: $primary-color;
+        font-size: $txt-font-size;
+        font-weight: $font-medium;  
+        
+        .host__name__first,
+        .host__name__last {
+            display: block;
+        }
+    }
+
+    .host__avatar {
+        width: 2rem;
+        height: 2rem;
+        object-fit: cover;
+        border-radius: 100%;
+
+        @media screen and (min-width: $Media-Desktop) {
+            width: 4rem;
+            height: 4rem;
+        }
+    }
+}

@@ -1,0 +1,65 @@
+.logement {
+
+    .logement__intro {
+        margin: 2rem auto;
+
+        .logement__intro__title__tags {
+            margin-bottom: 2rem;
+
+            h1 {
+                margin-top: 0;
+                margin-bottom: 1rem;
+    
+                span {
+                    font-size: $txt-font-size;
+                    display: block;
+                    color: $primary-color;
+                    margin-top: 0.5rem;
+                }
+            }
+        }
+
+        .logement__intro__rating__host {
+            display: flex;
+            justify-content: space-between;
+            flex-direction: row-reverse;
+            align-items: center;
+
+            @media screen and (min-width: $Media-Desktop) {
+                display: block;
+            }
+        }
+
+         @media screen and (min-width: $Media-Desktop) {
+            display: flex;
+            justify-content: space-between;
+        }
+    
+    }
+
+    .logement__collapses {
+        display: grid;
+        grid-template-columns: 1fr;
+
+        @media screen and (min-width: $Media-Desktop) {
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+        }
+
+        .collapsible__button {
+            font-size: 13px;
+            height: 30px;
+
+            @media screen and (min-width: $Media-Desktop) {
+                font-size: $txt-font-size;
+                height: 52px;
+            }
+        }
+
+        .collapsible__content {
+            @media screen and (min-width: $Media-Desktop) {
+                min-height: 160px;
+            }
+        }
+    }
+}

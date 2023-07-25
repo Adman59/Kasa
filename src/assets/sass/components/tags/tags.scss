@@ -1,0 +1,11 @@
+.tag {
+    display: inline-block;
+    background-color: $primary-color;
+    color: $white-background;
+    border-radius: $small-radius;
+    padding: 0.5rem 1.5rem;
+    margin: 0.5rem 0.5rem 0 0;
+    font-size: $txt-tags;
+    font-weight: $font-medium;
+    text-align: center;
+}
